@@ -1,0 +1,345 @@
+body {
+  /* width: 1200px; */
+  margin: 20px 50p;
+  font-family: 'Montserrat', sans-serif;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+.hero{
+display: flex;
+justify-content: space-evenly;
+  height: 565px;
+
+}
+.hero_one {
+  width: 600px;
+  height: 530px;
+  background-image: url(/Img/shutterbug.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+}
+.hero_one:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+
+}
+.hero_two {
+  width: 600px;
+  height: 530px;
+  background-color: #000000;
+  z-index: 10;
+}
+.hero_two .hero_text{
+  margin-top: 50px;
+  width: 560px;
+  height: 400px;
+  background-color: #000000;
+  margin-left: -150px;
+  z-index: 10;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.hero_two button{
+  font-size: 24px;
+  padding:  20px 30px;
+  color: #ffffff;
+  background-color: #0269CA;
+  border: 0px;
+}
+
+.hero_hidden{
+display: none;
+justify-content: space-evenly;
+  height: 565px;
+  z-index: 10;
+
+}
+
+.hero_hidden_one .hero_hidden_text{
+  margin-top: 50px;
+  width: 260px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #000000b2;
+  /* margin-left: -150px; */
+  z-index: 1;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.hero_hidden_one button{
+  font-size: 24px;
+  padding:  20px 30px;
+  color: #ffffff;
+  background-color: #0269CA;
+  border: 0px;
+  z-index: 10;
+}
+
+
+.container {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0269CA;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  /* padding: 1em; */
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+  margin: 20px 80px;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+
+
+.line_one_container{
+  background-color: #0269CA;
+   height: 2px;
+    width: 418px;
+}
+
+.line_two_container{
+  background-color: #0269CA;
+  height: 6px; 
+  width: 418px; 
+  margin-left:  auto;
+}
+
+
+
+
+
+
+
+
+button{
+  font-size: 24px;
+  padding:  20px 30px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 0ch;
+}
+.text_container{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 30px 50px;
+}
+.text_container p{
+  font-size: 24px; 
+  margin: 20px 100px;
+}
+.cards_container{
+  background-color: #212121;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+.cards_container p{
+  font-size: 24px; 
+  margin: 20px 100px;
+}
+.card_items{
+  display: flex;
+  justify-content: space-evenly;
+  /* text-align: left; */
+}
+.card_items .card{
+  width: 505px;
+  height: 263px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.footer{
+  background-color: #212121;
+  color: #ffffff;
+  padding: 50px;
+ 
+}
+
+.footer_container{
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.footer_container strong{
+  font-size: 32px
+}
+
+.button{
+  text-decoration: none;
+  background: #0269CA;
+  color: #ffffff;
+  padding: 12px 30px;
+}
+.footer_container_1{
+  color: #8A94A7;
+  display: flex;
+  justify-content: space-between; 
+  padding: 30px 20px 0px 20px;
+}
+
+@media all and (max-width: 768px) {
+  body{
+    margin: 5px;
+  }
+  
+.hero_hidden_one {
+  /* width: 304px; */
+  height: 530px;
+  margin: 0 auto;
+  background-image: url(/Img/shutterbug.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 17.5px 25px;
+  z-index: 10;
+}
+
+  .hero{
+    display: none;
+    /* flex-direction: column; */
+  }
+  .hero_hidden{
+    display: block;
+  }
+  .hero_one {
+    width: 300px;
+  }
+  .hero_two {
+    width: 300px;
+  }
+
+  .hero_two .hero_text{
+    width: 290px;
+  }
+
+
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.3rem;
+  }
+ul{
+  padding: 20px 0px;
+}
+  li {
+      font-size: 15px;
+      padding: .75rem;
+  }
+
+  li span {
+      font-size: 2.075rem;
+      margin: 0px;
+  }
+  .text_container{
+    padding: 10px 5px;
+  }
+  .text_container p{
+    font-size: 24px; 
+    margin: 5px 15px;
+    text-align: center;
+  }
+
+  .line_one_container{
+   
+    width: 210px;
+  }
+
+  
+.line_two_container{
+  width: 210px; 
+}
+
+.cards_container{
+  padding: 10px 5px;
+}
+.cards_container p{
+  margin: 10px 5px;
+}
+.card_items{
+  display: flex;
+  flex-direction: column;
+}
+.card_items .card{
+  width: 295px;
+  margin: 10px auto;
+
+}
+.footer{
+  padding: 20px;
+}
+.footer_container{
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+ 
+}
+
+.footer_container strong{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.button{
+  padding: 30px auto;
+}
+.footer_container_1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
