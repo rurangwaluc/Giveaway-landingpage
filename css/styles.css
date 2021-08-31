@@ -15,22 +15,26 @@ td {
 img {
   border: 0;
 }
-.hero{
-display: flex;
-justify-content: space-evenly;
-  height: 565px;
-
+.the_container{
+  padding: 30px;
 }
-.hero_one {
-  width: 600px;
-  height: 530px;
-  background-image: url(/Img/shutterbug.jpg);
+
+.hero{
+  display: flex;
+  justify-content: space-evenly;
+  width: 1197px;
+  height: 664.19px;
+  background-image: url(../Img/hero.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 11.4px;
+  margin: 0 auto;
   position: relative;
-  padding: 20px;
+  z-index: -1;
 }
-.hero_one:before {
+.hero:before {
   width: 100%;
   height: 100%;
   content: '';
@@ -38,25 +42,43 @@ justify-content: space-evenly;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 0;
+
 
 }
+.hero_one {
+  width: 495.5px;
+  height: 572.31px;
+  padding: 20px; 
+  z-index: 10; 
+}
+
+.big_line{
+  width: 418px;
+  background-color: #0269CA;
+  height: 6px;  
+  margin: 0 auto;
+}
+.small_line{
+  width: 209px;
+  background-color: #0269CA;
+  height: 2px;  
+  margin: 0 30px;
+}
+
 .hero_two {
-  width: 600px;
-  height: 530px;
+  width: 601.7px;
+  height: 583.7px;
   background-color: #000000;
   z-index: 10;
+  color: #ffffff;
+  padding: 11.4px 55.6px;
 }
-.hero_two .hero_text{
+/* .hero_two .hero_text{
   margin-top: 50px;
   width: 560px;
   height: 400px;
-  background-color: #000000;
-  margin-left: -150px;
-  z-index: 10;
-  color: #ffffff;
-  padding: 30px;
-}
+  
+} */
 
 .hero_two button{
   font-size: 24px;
@@ -65,43 +87,24 @@ justify-content: space-evenly;
   background-color: #0269CA;
   border: 0px;
 }
-
-.hero_hidden{
-display: none;
-justify-content: space-evenly;
-  height: 565px;
-  z-index: 10;
-
-}
-
-.hero_hidden_one .hero_hidden_text{
-  margin-top: 50px;
-  width: 260px;
-  height: 400px;
-  margin: 0 auto;
-  background-color: #000000b2;
-  /* margin-left: -150px; */
-  z-index: 1;
-  color: #ffffff;
-  padding: 20px;
-}
-
-.hero_hidden_one button{
+.hero_two .hero_text p{
   font-size: 24px;
-  padding:  20px 30px;
-  color: #ffffff;
-  background-color: #0269CA;
-  border: 0px;
-  z-index: 10;
+ width: 451.17px;
+ line-height: 40px;
+}
+.hero_two .hero_text strong{
+  font-size: 40px;
+
 }
 
 
 .container {
+  width: 1182px;
   color: #ffffff;
   margin: 0 auto;
   text-align: center;
   background-color: #0269CA;
-  padding: 50px 20px;
+  padding: 50px 28px;
 }
 
 h1 {
@@ -141,6 +144,8 @@ li span {
   background-color: #0269CA;
    height: 2px;
     width: 418px;
+  z-index: 1;
+
 }
 
 .line_two_container{
@@ -148,6 +153,8 @@ li span {
   height: 6px; 
   width: 418px; 
   margin-left:  auto;
+  z-index: 1;
+
 }
 
 
@@ -165,18 +172,40 @@ button{
   border: 0ch;
 }
 .text_container{
-  background-color: #000000;
+  background-image: url(../Img/bacg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #ffffff;
-  padding: 30px 50px;
+  position: relative;
+  z-index: -1;
+  padding: 30px 28px;
+  width: 1182px;
+  margin: 0 auto;
+}
+.text_container:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+
 }
 .text_container p{
+  z-index: 10;
   font-size: 24px; 
   margin: 20px 100px;
 }
 .cards_container{
+
+  width: 1182px;
+  margin: 0 auto;
   background-color: #212121;
   color: #ffffff;
-  padding: 30px 20px;
+  padding: 30px 28px;
   text-align: center;
 }
 .cards_container p{
@@ -200,7 +229,9 @@ button{
   background-color: #212121;
   color: #ffffff;
   padding: 50px;
- 
+  padding: 30px 28px;
+  width: 1182px;
+  margin: 0 auto;
 }
 
 .footer_container{
@@ -228,35 +259,62 @@ button{
   padding: 30px 20px 0px 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 768px) {
-  body{
-    margin: 5px;
+ 
+  .the_container{
+    padding: 0px;
   }
   
-.hero_hidden_one {
-  /* width: 304px; */
-  height: 530px;
-  margin: 0 auto;
-  background-image: url(/Img/shutterbug.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding: 17.5px 25px;
-  z-index: 10;
-}
 
   .hero{
-    display: none;
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    width: 357px;
+    padding: 0px;
+    height: 686px;
   }
-  .hero_hidden{
-    display: block;
-  }
+  
   .hero_one {
-    width: 300px;
+    width: 355px;
+    height: 140.38px;
+    padding: 10px;
   }
   .hero_two {
-    width: 300px;
+    width: 355px;
+    height: 611px;
+    padding: 10px;
+    margin: 0 1px;
+
+  }
+  .hero_two .hero_text strong{
+    font-size: 28px;
+  
+  }
+  .hero_two .hero_text p{
+    width: 339.17px;
+    font-size: 22px;
+   }
+  .big_line{
+    width: 342px;
+    background-color: #0269CA;
+    height: 6px;  
+    margin: 0 auto;
+  }
+  .small_line{
+    width: 342px;
+    background-color: #0269CA;
+    height: 2px;  
+    margin: 0 auto;
   }
 
   .hero_two .hero_text{
@@ -265,7 +323,8 @@ button{
 
 
   .container {
-    padding: 10px;
+    padding: 10px 20px;
+    width: 360px;
   }
 
   h1 {
@@ -284,7 +343,8 @@ ul{
       margin: 0px;
   }
   .text_container{
-    padding: 10px 5px;
+    padding: 10px 20px;
+    width: 360px;
   }
   .text_container p{
     font-size: 24px; 
@@ -303,7 +363,8 @@ ul{
 }
 
 .cards_container{
-  padding: 10px 5px;
+  padding: 10px 20px;
+    width: 360px;
 }
 .cards_container p{
   margin: 10px 5px;
@@ -318,7 +379,8 @@ ul{
 
 }
 .footer{
-  padding: 20px;
+  padding: 10px 20px;
+    width: 360px;
 }
 .footer_container{
   height: 70px;
