@@ -24,7 +24,7 @@ img {
   justify-content: space-evenly;
   width: 1197px;
   height: 664.19px;
-  background-image: url(../Img/hero.png);
+  background-image: url(../images/hero.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -172,7 +172,7 @@ button{
   border: 0ch;
 }
 .text_container{
-  background-image: url(../Img/bacg.jpg);
+  background-image: url(../images/bacg.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
